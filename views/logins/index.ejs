@@ -1,0 +1,10 @@
+<h1>Logins:</h1>
+
+<div>
+    <% for (let i of logins) { %>
+    <b><%= i.user.displayName %></b>
+    logged in at <%= i.createdAt%>
+    <br/>
+    <% } %>
+</div>
+

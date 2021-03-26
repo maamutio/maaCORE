@@ -1,0 +1,12 @@
+
+<h1>Puntuaciones de<%= user.displayName%></h1>
+
+<ul>
+    <% for (let score of user.scores) { %>
+        <li>
+            <%= score.score%> at
+            <%= score.createdAt.toDateString()%>
+            <%= score.createdAt.toLocaleTimeString()%>
+        </li>
+     <% }%>
+</ul>
